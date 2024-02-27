@@ -80,15 +80,10 @@ body {
   height: 160px;
 }
 
-.container .title h2 {
+.container .title img {
+  width: 100px;
   margin-bottom: auto;
-  text-transform: uppercase;
-  font-weight: var(--font-weight-700);
   animation: displayTop 1s ease forwards;
-}
-
-.container .title h2 .dot {
-  color: var(--blue);
 }
 
 .container .title h1 {
@@ -188,7 +183,7 @@ body {
   opacity: 0.8;
 }
 
-.container img {
+.container > img {
   margin-top: 6rem;
   width: 650px;
   animation: displayBottom 1s ease forwards;
@@ -333,6 +328,10 @@ body {
     padding: 4rem 2rem;
   }
 
+  .container .title img {
+    width: 80px;
+  }
+
   .container .title h1 {
     font-size: 1.8rem;
     margin-bottom: 10px;
@@ -384,6 +383,13 @@ body {
 }
 
 @media (width < 376px) {
+  .container .title {
+    height: 130px;
+  }
+
+  .container .title img {
+    width: 60px;
+  }
   .container .title h1 {
     font-size: 1.5rem;
   }
